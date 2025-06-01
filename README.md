@@ -33,5 +33,6 @@ Automatic annotating assigns component references geometrically, which can resul
 ![image](https://github.com/user-attachments/assets/c4e8f29c-a621-490b-9a9e-151a57857bb3)
 
 Using `compactREF` the components are clustered by value and footprint, then given sequential designators:
+
 (must close and re-open schematic to observe changes, then update PCB from schematic afterwards)
 ![image](https://github.com/user-attachments/assets/63007260-c200-4a36-acdd-f6bf6c1264ff)
