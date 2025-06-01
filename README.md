@@ -5,6 +5,10 @@ Python scripts for BOM operations in KiCAD (tested on 9+ only)
 - python
 - pandas
 
+#### To install pandas for KiCAD's instance of python
+1. Navigate to installation `bin` folder, such as `C:\Program Files\KiCad\9.0\bin` in a terminal
+2. Run `./python -m pip install pandas`
+
 ### Usage
 #### TODO
 Currently, the scripts must be navigated-to, imported, and run either inside or outside of KiCAD.
