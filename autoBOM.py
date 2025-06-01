@@ -10,7 +10,7 @@ from condensing import compress_references
 from parsing import get_BOM_all_sheets
 
 
-def printBOM(maxlen=50, add_fields=None):
+def printBOM(maxlen=50, add_fields=None, to_csv=False):
     """
     Print the BOM for the current project to terminal.
     Can be pasted into a textbox with mono-spaced font
@@ -21,6 +21,8 @@ def printBOM(maxlen=50, add_fields=None):
         Max column width in characters (truncated)
     add_fields : list | string | None (default)
         Any additional property field(s) to include in the BOM
+    to_csv : bool (default=False)
+        Export a csv of the BOM into the project folder
     """
     import pcbnew
 
@@ -32,6 +34,7 @@ def printBOM(maxlen=50, add_fields=None):
         basedir,
         filename.replace("_pcb", "_sch"),
         maxlen=maxlen,
+        to_csv=to_csv,
         additional_fields=add_fields,
     )
 
